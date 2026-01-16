@@ -56,38 +56,40 @@ Run this command:
 dmesg | grep imx
 
 ✅ Step 3: Install Required Libraries
+
+
 🔹 Update System
 
 
-sudo apt update
+-> sudo apt update
 
 
-sudo apt upgrade -y
+-> sudo apt upgrade -y
 
 🔹 Install Picamera2
 
 
-sudo apt install -y python3-picamera2
+-> sudo apt install -y python3-picamera2
 
 🔹 Install OpenCV
 
 
-sudo apt install -y python3-opencv
+-> sudo apt install -y python3-opencv
 
 🔹 Install YOLOv8 (Ultralytics)
 
 
-python3 -m pip install ultralytics --break-system-packages
+-> python3 -m pip install ultralytics --break-system-packages
 
 🔹 Install Text-to-Speech (gTTS)
 
 
-python3 -m pip install gTTS --break-system-packages
+-> python3 -m pip install gTTS --break-system-packages
 
 🔹 Install Audio Player
 
 
-sudo apt install mpg123 -y
+-> sudo apt install mpg123 -y
 
 
 📦 Download YOLOv8 Model
