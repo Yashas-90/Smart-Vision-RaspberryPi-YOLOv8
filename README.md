@@ -1,5 +1,7 @@
 # Smart-Vision-RaspberryPi-YOLOv8
 
+# Smart-Vision-RaspberryPi-YOLOv8
+
 # 👁️ Smart Vision using Raspberry Pi + YOLOv8 + Voice Assistance
 
 ## 📌 Project Overview
@@ -98,3 +100,4 @@ Run Smart Vision code:
 bash
 python3 Code/Smart_Vision.py
 Press q to exit.
+
