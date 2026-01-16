@@ -58,6 +58,7 @@ Run:
 dmesg | grep imx
 
 ## ✅ Step 3: Install Required Libraries
+
 Update system:
 bash
 sudo apt update
