@@ -54,7 +54,7 @@ It detects important objects and gives **voice announcements** using Text-to-Spe
 
 ## ✅ Step 2: Verify Pi Camera Connection
 Run:
-```bash
+```bash`
 dmesg | grep imx
 
 ## ✅ Step 3: Install Required Libraries
