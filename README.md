@@ -1,1 +1,99 @@
 # Smart-Vision-RaspberryPi-YOLOv8
+
+# 👁️ Smart Vision using Raspberry Pi + YOLOv8 + Voice Assistance
+
+## 📌 Project Overview
+This project is a **Real-Time Smart Vision System** built using **Raspberry Pi Camera** and **YOLOv8 Object Detection**.
+It detects important objects and gives **voice announcements** using Text-to-Speech (TTS).
+
+✅ Live camera streaming  
+✅ Object detection using YOLOv8  
+✅ Voice feedback using gTTS  
+✅ Direction guidance: left / ahead / right  
+✅ Distance estimation: near / far  
+
+---
+
+## 🎯 Applications
+- Smart assistance for visually impaired people
+- Indoor navigation and object awareness
+- Safety monitoring system
+- Smart robotics vision module
+
+---
+
+## 🧰 Hardware Requirements
+- Raspberry Pi (3 / 4 / 5 recommended)
+- Raspberry Pi Camera Module (IMX219 / IMX708)
+- Speaker / Earphones (3.5mm / USB)
+- Internet connection (for gTTS)
+
+---
+
+## 💻 Software Requirements
+- Raspberry Pi OS (Latest recommended)
+- Python 3
+- Picamera2
+- OpenCV
+- Ultralytics YOLOv8
+- gTTS
+- mpg123
+
+---
+
+## ✅ Step 1: Enable Camera on Raspberry Pi
+1. Click **Raspberry Pi icon (top-left)**
+2. Go to **Preferences**
+3. Open **Raspberry Pi Configuration**
+4. Click **Interfaces**
+5. Enable **Camera**
+6. Click **OK**  
+✅ Raspberry Pi will reboot
+
+---
+
+## ✅ Step 2: Verify Pi Camera Connection
+Run:
+```bash
+dmesg | grep imx
+
+## ✅ Step 3: Install Required Libraries
+Update system:
+bash
+sudo apt update
+sudo apt upgrade -y
+
+Install Picamera2:
+bash
+sudo apt install -y python3-picamera2
+
+Install OpenCV:
+bash
+sudo apt install -y python3-opencv
+
+Install YOLOv8 (Ultralytics):
+bashe
+python3 -m pip install ultralytics --break-system-packages
+
+Install Text-to-Speech:
+bash
+python3 -m pip install gTTS --break-system-packages
+
+Install Audio Player:
+bash
+sudo apt install mpg123 -y
+
+## 📦 Download YOLOv8 Model
+Download and place the model inside the Models/ folder:
+bash
+wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
+
+Move it to:
+bash
+mv yolov8n.pt Models/
+
+## ▶️ Run the Project
+Run Smart Vision code:
+bash
+python3 Code/Smart_Vision.py
+Press q to exit.
