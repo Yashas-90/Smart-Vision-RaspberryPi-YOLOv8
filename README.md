@@ -51,47 +51,55 @@ It detects important objects and gives **voice announcements** using Text-to-Spe
 
 ---
 
-✅ **Method 3: Use bullet points**
-- Like this  
-- It automatically comes in next line
-
----
-
-# ✅ Correct format for your section (Copy-Paste)
-
-```markdown
 ## ✅ Step 2: Verify Pi Camera Connection
-Run:
-
-```bash
+Run this command:
 dmesg | grep imx
+
 ✅ Step 3: Install Required Libraries
 🔹 Update System
-bash
-Copy code
-sudo apt update
+**bash**
+**sudo apt update
 sudo apt upgrade -y
+
 🔹 Install Picamera2
 bash
-Copy code
+
 sudo apt install -y python3-picamera2
+
 🔹 Install OpenCV
 bash
-Copy code
 sudo apt install -y python3-opencv
+
 🔹 Install YOLOv8 (Ultralytics)
 bash
-Copy code
 python3 -m pip install ultralytics --break-system-packages
+
 🔹 Install Text-to-Speech (gTTS)
 bash
-Copy code
 python3 -m pip install gTTS --break-system-packages
+
 🔹 Install Audio Player
 bash
-Copy code
 sudo apt install mpg123 -y
-yaml
-Copy code
 
----
+
+📦 Download YOLOv8 Model
+Download the model:
+
+bash
+wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
+
+
+Move it into the Models folder:
+
+bash
+mkdir -p Models
+mv yolov8n.pt Models/
+
+
+▶️ Run the Project
+Run Smart Vision code:
+
+bash
+python3 Code/Smart_Vision.py
+Press q to exit.
