@@ -57,49 +57,64 @@ dmesg | grep imx
 
 ✅ Step 3: Install Required Libraries
 🔹 Update System
-**bash**
-**sudo apt update
+
+
+sudo apt update
+
+
 sudo apt upgrade -y
 
 🔹 Install Picamera2
-bash
+
 
 sudo apt install -y python3-picamera2
 
 🔹 Install OpenCV
-bash
+
+
 sudo apt install -y python3-opencv
 
 🔹 Install YOLOv8 (Ultralytics)
-bash
+
+
 python3 -m pip install ultralytics --break-system-packages
 
 🔹 Install Text-to-Speech (gTTS)
-bash
+
+
 python3 -m pip install gTTS --break-system-packages
 
 🔹 Install Audio Player
-bash
+
+
 sudo apt install mpg123 -y
 
 
 📦 Download YOLOv8 Model
+
+
 Download the model:
 
-bash
+
 wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
 
 
 Move it into the Models folder:
 
-bash
+
 mkdir -p Models
+
+
 mv yolov8n.pt Models/
 
 
 ▶️ Run the Project
+
+
 Run Smart Vision code:
 
-bash
+
 python3 Code/Smart_Vision.py
+
+
 Press q to exit.
