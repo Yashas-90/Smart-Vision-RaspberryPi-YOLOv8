@@ -1,11 +1,7 @@
-# Smart-Vision-RaspberryPi-YOLOv8
-
-# Smart-Vision-RaspberryPi-YOLOv8
-
 # 👁️ Smart Vision using Raspberry Pi + YOLOv8 + Voice Assistance
 
 ## 📌 Project Overview
-This project is a **Real-Time Smart Vision System** built using **Raspberry Pi Camera** and **YOLOv8 Object Detection**.
+This project is a **Real-Time Smart Vision System** built using a **Raspberry Pi Camera** and **YOLOv8 Object Detection**.  
 It detects important objects and gives **voice announcements** using Text-to-Speech (TTS).
 
 ✅ Live camera streaming  
@@ -17,29 +13,29 @@ It detects important objects and gives **voice announcements** using Text-to-Spe
 ---
 
 ## 🎯 Applications
-- Smart assistance for visually impaired people
-- Indoor navigation and object awareness
-- Safety monitoring system
-- Smart robotics vision module
+- Smart assistance for visually impaired people  
+- Indoor navigation and object awareness  
+- Safety monitoring system  
+- Smart robotics vision module  
 
 ---
 
 ## 🧰 Hardware Requirements
-- Raspberry Pi (3 / 4 / 5 recommended)
-- Raspberry Pi Camera Module (IMX219 / IMX708)
-- Speaker / Earphones (3.5mm / USB)
-- Internet connection (for gTTS)
+- Raspberry Pi (3 / 4 / 5 recommended)  
+- Raspberry Pi Camera Module (IMX219 / IMX708)  
+- Speaker / Earphones (3.5mm / USB)  
+- Internet connection (for gTTS)  
 
 ---
 
 ## 💻 Software Requirements
-- Raspberry Pi OS (Latest recommended)
-- Python 3
-- Picamera2
-- OpenCV
-- Ultralytics YOLOv8
-- gTTS
-- mpg123
+- Raspberry Pi OS (Latest recommended)  
+- Python 3  
+- Picamera2  
+- OpenCV  
+- Ultralytics YOLOv8  
+- gTTS  
+- mpg123  
 
 ---
 
@@ -49,55 +45,59 @@ It detects important objects and gives **voice announcements** using Text-to-Spe
 3. Open **Raspberry Pi Configuration**
 4. Click **Interfaces**
 5. Enable **Camera**
-6. Click **OK**  
-✅ Raspberry Pi will reboot
+6. Click **OK**
+
+✅ Raspberry Pi will reboot automatically.
 
 ---
 
 ## ✅ Step 2: Verify Pi Camera Connection
-Run:
-```bash`
+Run this command:
+
+```bash
 dmesg | grep imx
-
-## ✅ Step 3: Install Required Libraries
-
-Update system:
+✅ Step 3: Install Required Libraries
+🔹 Update System
 bash
+Copy code
 sudo apt update
 sudo apt upgrade -y
-
-Install Picamera2:
+🔹 Install Picamera2
 bash
+Copy code
 sudo apt install -y python3-picamera2
-
-Install OpenCV:
+🔹 Install OpenCV
 bash
+Copy code
 sudo apt install -y python3-opencv
-
-Install YOLOv8 (Ultralytics):
-bashe
+🔹 Install YOLOv8 (Ultralytics)
+bash
+Copy code
 python3 -m pip install ultralytics --break-system-packages
-
-Install Text-to-Speech:
+🔹 Install Text-to-Speech (gTTS)
 bash
+Copy code
 python3 -m pip install gTTS --break-system-packages
-
-Install Audio Player:
+🔹 Install Audio Player
 bash
+Copy code
 sudo apt install mpg123 -y
+📦 Download YOLOv8 Model
+Download the model:
 
-## 📦 Download YOLOv8 Model
-Download and place the model inside the Models/ folder:
 bash
+Copy code
 wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
+Move it into the Models folder:
 
-Move it to:
 bash
+Copy code
+mkdir -p Models
 mv yolov8n.pt Models/
-
-## ▶️ Run the Project
+▶️ Run the Project
 Run Smart Vision code:
+
 bash
+Copy code
 python3 Code/Smart_Vision.py
 Press q to exit.
-
